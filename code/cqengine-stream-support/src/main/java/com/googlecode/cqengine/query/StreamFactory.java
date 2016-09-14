@@ -19,7 +19,7 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 /**
- * A static factory for converting {@code java.lang.Iterable}s into Java 8 {@code java.util.stream.Stream}s.
+ * A static factory for converting {@link Iterable}s into Java 8 {@link Stream}s.
  * <p/>
  * This is primarily for use with CQEngine {@code ResultSet}s, as a means to allow CQEngine to retain compatibility
  * with Java 6, while it may be used with this library which works with Java 8.
@@ -29,6 +29,12 @@ import java.util.stream.StreamSupport;
 @SuppressWarnings("WeakerAccess")
 public class StreamFactory {
 
+    /**
+     * Converts the given {@link Iterable} into a sequential {@link Stream}.
+     *
+     * @param iterable The {@code Iterable} to convert
+     * @return A sequential {@code Stream} of the objects returned by the {@code Iterable}
+     */
     public static <O> Stream<O> streamOf(Iterable<O> iterable) {
         return StreamSupport.stream(iterable.spliterator(), false);
     }
