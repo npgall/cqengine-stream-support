@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.googlecode.cqengine</groupId>
     <artifactId>cqengine-stream-support</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>CQEngine Stream Support</name>
     <description>Utilities to provide access for other libraries to Java 8 streams,
@@ -24,7 +24,7 @@
         <url>https://github.com/npgall/${project.artifactId}.git</url>
         <connection>scm:git:https://github.com/npgall/${project.artifactId}.git</connection>
         <developerConnection>scm:git:git@github.com:npgall/${project.artifactId}.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>1.0.0</tag>
     </scm>
     <developers>
         <developer>
